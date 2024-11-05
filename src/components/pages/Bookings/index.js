@@ -25,8 +25,8 @@ const Bookings = () => {
   }; 
 
   return (
-    <div className="bookings">
-      <h2>Table reservation</h2>
+    <div>
+      <h2 className="py-[1.875rem] bg-darkGreen text-white text-center mb-5">Table reservation</h2>
       <BookingForm 
         availableTimes={availableTimes} 
         dispatchOnDateChange={dispatchOnDateChange} 

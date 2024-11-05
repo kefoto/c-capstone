@@ -32,10 +32,10 @@ const meals = [
 
 const WeekSpecials = () => {
   return (
-    <section className="container grid week-specials">
-      <div className="week-specials-header">
-        <h2>This week specials!</h2>
-        <Link className="button-primary" to={pages.get('orderOnline').path}>
+    <section className="max-w-[61.625rem] w-[90%] mx-auto grid grid-cols-3 grid-rows-[auto_auto] gap-[1.25rem]">
+      <div className="col-start-1 col-span-3 row-start-1 flex justify-between items-center mb-[1.875rem]">
+        <h2 className='leading-[1] font-normal text-[2.5rem]'>This week specials!</h2>
+        <Link className="btn-custom" to={pages.get('orderOnline').path}>
           Online Menu
         </Link>
       </div>

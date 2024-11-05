@@ -13,10 +13,10 @@ const Header = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
 
     return (
-        <header className="border-b-4 border-darkgreen11">
-          <nav className=" grid min-h-24 auto-cols-auto max-w-[61.625rem] w-[90%] mx-auto">
+        <header className="border-b-2 border-darkgreen">
+          <nav className="grid min-h-24 auto-cols-auto max-w-[61.625rem] w-[90%] mx-auto my-auto">
             <Link className="col-start-1 justify-self-start self-center leading-none" to={pages.get('home').path}>
-              <img className="max-w-[15.625rem]" src={logoImage} alt="Little Lemon logo" />
+              <img className="max-w-[15.625rem] p-1" src={logoImage} alt="Little Lemon logo" />
             </Link>
             <button 
               className="col-start-2 hidden cursor-pointer text-darkGreen transition-colors duration-500 hover:text-lemon" 
@@ -28,13 +28,14 @@ const Header = () => {
                 <FontAwesomeIcon icon={faBars} size="2x" />}
             </button>
             <ul 
-              className={`col-start-3 flex justify-end my-0 px-0 list-none transition-left duration-300 ${isNavExpanded ? 'left-0' : ''}`}
+              className={`col-start-3 flex justify-end h-full pr-1.5 list-none gap-x-2.5
+                            transition-left duration-300 ${isNavExpanded ? 'left-0' : ''}`}
               onClick={() => setIsNavExpanded(!isNavExpanded)}
             >
               {navLinks.map((navLink, index) => 
                 <li key={index} className='flex'>
                   <Link 
-                    className={pathname === navLink.path ? 'bg-lemon' : ''} 
+                    className={`my-auto ${pathname === navLink.path ? 'bg-lemon' : ''}`} 
                     to={navLink.path}
                   >
                     {navLink.name}

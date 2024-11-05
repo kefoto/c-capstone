@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         lemon: "#F4CE14", // Custom color
         darkGreen: "#495E57", // Custom color
-        white
+        white: "#FFFFFF",
       },
     },
   },

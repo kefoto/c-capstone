@@ -4,11 +4,11 @@ import chefsMarioAndAdrianBImage from './assets/chefs-mario-and-adrian_b.jpg';
 
 const Story = () => {
   return (
-    <section className="container grid our-story">
-      <div className="our-story-description">
-        <h1>Little Lemon</h1>
-        <h2>Chicago</h2>
-        <p>
+    <section className="max-w-[61.625rem] w-[90%] mx-auto grid grid-cols-2 gap-[3.5rem]">
+      <div className="col-start-1">
+        <h1 className='text-lemon text-4xl'>Little Lemon</h1>
+        <h2 className='text-2xl'>Chicago</h2>
+        <p className='pt-3'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
           eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -24,9 +24,9 @@ const Story = () => {
           voluptatem sequi nesciunt.
         </p>
       </div>
-      <div className="our-story-chefs">
-        <img src={chefsMarioAndAdrianAImage} alt="Chefs Mario and Adrian" />
-        <img src={chefsMarioAndAdrianBImage} alt="Chefs Mario and Adrian" />
+      <div className="col-start-2 flex flex-col gap-4">
+        <img className="rounded-[1rem]" src={chefsMarioAndAdrianAImage} alt="Chefs Mario and Adrian" />
+        <img className="rounded-[1rem]" src={chefsMarioAndAdrianBImage} alt="Chefs Mario and Adrian" />
       </div>
     </section>
   );

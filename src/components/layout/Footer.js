@@ -64,7 +64,7 @@ const Footer = () => {
             ))}
           </address>
         </div>
-        <div className="col-start-4">
+        <div className="col-start-4 space-x-2">
           <h4 className="mb-4">Connect with us</h4>
           {socials.map((social, index) => (
             <a

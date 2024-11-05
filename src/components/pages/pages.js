@@ -14,7 +14,7 @@ pages.set('confirmedBooking', {
   linkable: false 
 });
 pages.set('orderOnline', { 
-  name: 'Order Online', 
+  name: 'Order', 
   path: '/order', 
   linkable: true 
 });

@@ -49,7 +49,7 @@ const BookingForm = ({
   };
 
   return (
-    <form onSubmit={handleFormSubmit}>
+    <form onSubmit={handleFormSubmit} className='mt-0 mx-auto mb-[1.875rem] px-10 space-y-3 w-full'>
       <FormField 
         label="Date" 
         htmlFor="booking-date" 
@@ -124,9 +124,11 @@ const BookingForm = ({
         </select>
       </FormField>
       <button 
-        className="btn-custom" 
+        className="flex btn-custom mx-auto
+                  disabled:opacity-100 disabled:bg-gray-200 disabled:text-gray-600 " 
         type="submit" 
         disabled={!areAllFieldsValid()}
+        // disabled
       >
         Make your reservation
       </button>
