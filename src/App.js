@@ -1,9 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Layout from "./components/layout/Layout";
 import { Route, Routes } from "react-router-dom";
 import pages from "./components/pages/pages";
 import Home from './components/pages/Home';
+import UnderConstruction from "./components/pages/UnderConstruction";
+import Bookings from "./components/pages/Bookings"
+import ConfirmedBooking from './components/pages/ConfirmedBooking';
+import NotFound from './components/pages/NotFound';
 
 function App() {
   return (

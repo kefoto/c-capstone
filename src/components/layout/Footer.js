@@ -9,11 +9,11 @@ import {
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import "./Footer.css";
 import logoWhiteImage from "./assets/logo-white.png";
-import pages from "../../utils/pages";
+import pages from "../pages/pages";
 
 const contacts = [
   { icon: faLocationDot, info: "678 Pisa Ave, Chicago, IL 60611" },
@@ -32,7 +32,7 @@ const navLinks = Array.from(pages.values()).filter((page) => page.linkable);
 
 const Footer = () => {
   return (
-    <footer className="text-[#FFFFFF] bg-[#495E57]">
+    <footer className="text-white bg-darkGreen">
       <div className="max-w-[61.625rem] w-[90%] mx-auto grid grid-cols-4 auto-rows-auto pt-10 pb-10">
         <img
           className="col-start-1 min-w-[6rem] w-[6rem]"
@@ -46,7 +46,7 @@ const Footer = () => {
               <li key={index}>
                 <Link
                   to={navLink.path}
-                  className="transition-colors duration-500 text-[#FFFFFF] focus:text-[#F4CE14] hover:focus:text-[#F4CE14]"
+                  className="transition-colors duration-500 text-white focus:text-lemon hover:focus:text-lemon"
                 >
                   {navLink.name}
                 </Link>

@@ -1,7 +1,7 @@
 import Hero from './Hero';
 import WeekSpecials from './WeekSpecials';
 import Testimonials from './Testimonials';
-import OurStory from './OurStory';
+import Story from './Story';
 
 const Home = () => {
   return (
